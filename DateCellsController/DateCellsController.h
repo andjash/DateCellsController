@@ -37,4 +37,9 @@ willCollapseTableViewContent:(UITableView *)tableView
              withDelegate:(id<DateCellsControllerDelegate>)delegate
               withMapping:(NSMutableDictionary *)indexPathToDateMapping;
 
+- (UITableViewCell *)cellForIndexPath:(NSIndexPath *)indexPath
+                  ignoringPickerCells:(BOOL)ignoring;
+
+- (void)hidePicker;
+
 @end

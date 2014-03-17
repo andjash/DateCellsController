@@ -55,6 +55,27 @@ static const CGFloat kDefaultRowHeight = 44;
     self.indexPathToDateMapping = indexPathToDatemapping;
 }
 
+- (void)hidePicker {
+    if (self.datePickerIndexPath) {
+        NSIndexPath *dateCellPath = [NSIndexPath indexPathForRow:_datePickerIndexPath.row - 1
+                                                       inSection:_datePickerIndexPath.section];
+        [self displayInlineDatePickerForRowAtIndexPath:dateCellPath];
+    }
+}
+
+- (UITableViewCell *)cellForIndexPath:(NSIndexPath *)indexPath
+                  ignoringPickerCells:(BOOL)ignoring {
+    
+    NSIndexPath *shiftedIndexPath = indexPath;
+    
+    if (ignoring && self.datePickerIndexPath && self.datePickerIndexPath.section == indexPath.section) {
+        BOOL before = _datePickerIndexPath.row <= indexPath.row;
+        int shift = before ? 1 : 0;
+        shiftedIndexPath = [NSIndexPath indexPathForRow:indexPath.row + shift inSection:indexPath.section];
+    }
+    return  [self.tableView cellForRowAtIndexPath:shiftedIndexPath];
+}
+
 #pragma mark - Private
 
 - (BOOL)hasPickerForIndexPath:(NSIndexPath *)indexPath {
