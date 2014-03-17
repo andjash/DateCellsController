@@ -196,7 +196,13 @@ static const CGFloat kDefaultRowHeight = 44;
                               forIndexPath:dateCellPath];
         }
     } else {
-        cell = [self.delegate tableView:tableView cellForRowAtIndexPath:indexPath];
+        NSIndexPath *shiftedIndexPath = indexPath;
+        if (self.datePickerIndexPath && self.datePickerIndexPath.section == indexPath.section) {
+            BOOL before = _datePickerIndexPath.row < indexPath.row;
+            int shift = before ? -1 : 0;
+            shiftedIndexPath = [NSIndexPath indexPathForRow:indexPath.row + shift inSection:indexPath.section];
+        }
+        cell = [self.delegate tableView:tableView cellForRowAtIndexPath:shiftedIndexPath];
     }
    
 	return cell;
