@@ -108,6 +108,12 @@ static const CGFloat kDefaultRowHeight = 44;
             self.datePickerIndexPath.section == indexPath.section) {
             before = YES;
         }
+        
+        UIDatePicker *picker = [((DatePickerCell *)[self.tableView cellForRowAtIndexPath:self.datePickerIndexPath]) datePicker];
+        [picker removeTarget:self
+                      action:@selector(dateSelectedAction:)
+            forControlEvents:UIControlEventValueChanged];
+        
         [self.tableView deleteRowsAtIndexPaths:@[self.datePickerIndexPath]
                               withRowAnimation:UITableViewRowAnimationFade];
         self.datePickerIndexPath = nil;
