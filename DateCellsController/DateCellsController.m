@@ -76,6 +76,15 @@ static const CGFloat kDefaultRowHeight = 44;
     return  [self.tableView cellForRowAtIndexPath:shiftedIndexPath];
 }
 
+- (NSIndexPath *)indexPathForDateCellWithCurrentPicker {
+    if (_datePickerIndexPath) {
+        NSIndexPath *path = [NSIndexPath indexPathForRow:_datePickerIndexPath.row - 1
+                                               inSection:_datePickerIndexPath.section];
+        return path;
+    }
+    return nil;
+}
+
 #pragma mark - Private
 
 - (BOOL)hasPickerForIndexPath:(NSIndexPath *)indexPath {

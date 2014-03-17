@@ -37,6 +37,8 @@ willCollapseTableViewContent:(UITableView *)tableView
 @property (nonatomic, retain) UITableView *tableView;
 @property (nonatomic, retain) NSMutableDictionary *indexPathToDateMapping;
 
+- (NSIndexPath *)indexPathForDateCellWithCurrentPicker;
+
 - (void)attachToTableView:(UITableView *)tableView
              withDelegate:(id<DateCellsControllerDelegate>)delegate
               withMapping:(NSMutableDictionary *)indexPathToDateMapping;
