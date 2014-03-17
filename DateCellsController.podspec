@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = false
 
-  s.source_files = 'DateCellsController/*.{h,m,xib}'
+  s.source_files = 'DateCellsController/*.{h,m}'
+  s.resources = 'DateCellsController/*.{xib}'
   s.preserve_paths  = 'Demo'
 
 end
