@@ -179,6 +179,13 @@ static const CGFloat kDefaultRowHeight = 44;
         dateCell.datePicker.date = [_indexPathToDateMapping objectForKey:self.currentDateObjectIndexPath];
         [dateCell.datePicker addTarget:self action:@selector(dateSelectedAction:)
                       forControlEvents:UIControlEventValueChanged];
+        if ([_delegate respondsToSelector:@selector(dateCellsController:configuredPicker:forIndexPath:)]) {
+            NSIndexPath *dateCellPath = [NSIndexPath indexPathForRow:indexPath.row - 1
+                                                           inSection:indexPath.section];
+            [_delegate dateCellsController:self
+                          configuredPicker:dateCell.datePicker
+                              forIndexPath:dateCellPath];
+        }
     } else {
         cell = [self.delegate tableView:tableView cellForRowAtIndexPath:indexPath];
     }

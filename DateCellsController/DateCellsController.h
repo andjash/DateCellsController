@@ -25,6 +25,10 @@ willCollapseTableViewContent:(UITableView *)tableView
             didSelectedDate:(NSDate *)date
                forIndexPath:(NSIndexPath *)path;
 
+- (void)dateCellsController:(DateCellsController *)controller
+           configuredPicker:(UIDatePicker *)picker
+               forIndexPath:(NSIndexPath *)path;
+
 @end
 
 @interface DateCellsController : NSObject
