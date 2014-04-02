@@ -4,9 +4,9 @@ Simple ios controller for UITableView with date cells
 
 ### Preview
 
-![Preview1](https://github.com/andjash/DateCellsController/screenshots/screen_1.png)
-![Preview2](https://github.com/andjash/DateCellsController/screenshots/screen_2.png)
-![Preview3](https://github.com/andjash/DateCellsController/screenshots/screen_3.png)
+![Preview1](https://raw.githubusercontent.com/andjash/DateCellsController/master/screenshots/screen_1.png)
+![Preview2](https://raw.githubusercontent.com/andjash/DateCellsController/master/screenshots/screen_2.png)
+![Preview3](https://raw.githubusercontent.com/andjash/DateCellsController/master/screenshots/screen_3.png)
 
 (Check video: http://screencast.com/t/Vp94gyhpjUwr)
 
@@ -46,7 +46,7 @@ Attach controller to existing UITableView with proper mapping
 ```objc
 
 DateCellsController *dateCellsController = attachToTableView:self.tableView
-                             			       withDelegate:self
-                             			        withMapping:indexPathToDateMapping];
+                             			        withDelegate:self
+                             			         withMapping:indexPathToDateMapping];
 
 ```
