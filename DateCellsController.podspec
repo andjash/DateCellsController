@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DateCellsController"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Simple ios controller for UITableView with date cells."
   s.license          = 'MIT'
   s.homepage         = 'https://github.com/andjash/DateCellsController'
@@ -10,8 +10,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.requires_arc = false
 
-  s.source_files = 'DateCellsController/*.{h,m}'
-  s.resources = 'DateCellsController/*.{xib}'
-  s.preserve_paths  = 'Demo'
-
+  s.source_files = 'DateCellsController'
+  s.resources = 'DateCellsController'
 end
