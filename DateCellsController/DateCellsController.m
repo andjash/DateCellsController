@@ -8,39 +8,25 @@
 
 #import "DateCellsController.h"
 #import "DatePickerCell.h"
-#import  <objc/runtime.h>
 
 static const CGFloat kDefaultPickerHeight = 162;
 static const CGFloat kDefaultRowHeight = 44;
 
-@interface DateCellsController ()<UITableViewDataSource, UITableViewDelegate>
+@interface DateCellsController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, retain) NSIndexPath *datePickerIndexPath;
-@property (nonatomic, retain) NSIndexPath *currentDateObjectIndexPath;
+@property (nonatomic, strong) NSIndexPath *datePickerIndexPath;
+@property (nonatomic, strong) NSIndexPath *currentDateObjectIndexPath;
 
 @end
 
 @implementation DateCellsController
 
-
-#pragma mark - Init&Dealloc
-
-- (void)dealloc {
-    [_indexPathToDateMapping release];
-    [_datePickerIndexPath release];
-    [_tableView release];
-    [super dealloc];
-}
-
 #pragma mark - Propetries
 
 - (void)setTableView:(UITableView *)tableView {
-    [_tableView autorelease];
-    _tableView = [tableView retain];
-    
+    _tableView = tableView;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    
     [_tableView registerNib:[UINib nibWithNibName:@"DatePickerCell" bundle:[NSBundle mainBundle]]
      forCellReuseIdentifier:[DatePickerCell cellReuseId]];
 }
@@ -90,8 +76,7 @@ static const CGFloat kDefaultRowHeight = 44;
 - (BOOL)hasPickerForIndexPath:(NSIndexPath *)indexPath {
     NSInteger targetedRow = indexPath.row;
     targetedRow++;
-    UITableViewCell *checkDatePickerCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:targetedRow
-                                                                                                    inSection:[indexPath section]]];
+    UITableViewCell *checkDatePickerCell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:targetedRow inSection:[indexPath section]]];
     return [checkDatePickerCell reuseIdentifier] == [DatePickerCell cellReuseId];
 }
 
@@ -210,7 +195,7 @@ static const CGFloat kDefaultRowHeight = 44;
         }
         cell = [self.delegate tableView:tableView cellForRowAtIndexPath:shiftedIndexPath];
     }
-   
+
 	return cell;
 }
 

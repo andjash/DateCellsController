@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09F71C2D1B58DEE5001B873B /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F71C2C1B58DEE5001B873B /* Launch Screen.xib */; };
 		CCAD75AC18BF2BB0003BBC43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75AB18BF2BB0003BBC43 /* Foundation.framework */; };
 		CCAD75AE18BF2BB0003BBC43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75AD18BF2BB0003BBC43 /* CoreGraphics.framework */; };
 		CCAD75B018BF2BB0003BBC43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75AF18BF2BB0003BBC43 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F71C2C1B58DEE5001B873B /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		CCAD75A818BF2BB0003BBC43 /* DateCellsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateCellsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD75AB18BF2BB0003BBC43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CCAD75AD18BF2BB0003BBC43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +141,7 @@
 				CCAD75B418BF2BB0003BBC43 /* InfoPlist.strings */,
 				CCAD75B718BF2BB0003BBC43 /* main.m */,
 				CCAD75B918BF2BB0003BBC43 /* DateCellsDemo-Prefix.pch */,
+				09F71C2C1B58DEE5001B873B /* Launch Screen.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				CCAD75B618BF2BB0003BBC43 /* InfoPlist.strings in Resources */,
 				CCAD75EA18BF2D17003BBC43 /* ViewController.xib in Resources */,
 				CCAD75E818BF2C22003BBC43 /* DatePickerCell.xib in Resources */,
+				09F71C2D1B58DEE5001B873B /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DateCellsDemo/DateCellsDemo-Prefix.pch";
 				INFOPLIST_FILE = "DateCellsDemo/DateCellsDemo-Info.plist";
@@ -410,7 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DateCellsDemo/DateCellsDemo-Prefix.pch";
 				INFOPLIST_FILE = "DateCellsDemo/DateCellsDemo-Info.plist";

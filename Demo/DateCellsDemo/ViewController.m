@@ -24,9 +24,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+        self.dateFormatter = [[NSDateFormatter alloc] init];
         [self.dateFormatter setDateFormat:@"dd-MM-yyyy"];
-        self.dateCellsController = [[[DateCellsController alloc] init] autorelease];
+        self.dateCellsController = [[DateCellsController alloc] init];
         NSIndexPath *path = [NSIndexPath indexPathForRow:2 inSection:0];
         NSIndexPath *path2 = [NSIndexPath indexPathForRow:0 inSection:0];
         NSIndexPath *path3 = [NSIndexPath indexPathForRow:0 inSection:1];
@@ -37,19 +37,12 @@
         NSDate *date3 = [NSDate dateWithTimeIntervalSinceNow:5000];
         
         
-        self.dateCellsController.indexPathToDateMapping = [[@{path : date,
+        self.dateCellsController.indexPathToDateMapping = [@{path : date,
                                                           path2 : date2,
                                                           path3 : date3}
-                                                          mutableCopy] autorelease];
+                                                          mutableCopy];
     }
     return self;
-}
-
-- (void)dealloc {
-    self.dateFormatter = nil;
-    self.tableView = nil;
-    self.dateCellsController = nil;
-    [super dealloc];
 }
 
 #pragma mark - UIViewController overrides
@@ -59,11 +52,6 @@
     [self.dateCellsController attachToTableView:self.tableView
                                    withDelegate:self
                                     withMapping:self.dateCellsController.indexPathToDateMapping];
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    self.tableView = nil;
 }
 
 #pragma mark - DateCellsControllerDelegate 
@@ -103,7 +91,7 @@ willCollapseTableViewContent:(UITableView *)tableView
     
     UITableViewCell *cell = [tableViewInner dequeueReusableCellWithIdentifier:cellReuseId];
     if (!cell) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseId] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseId];
     }
     
     NSDate *correspondedDate = [self.dateCellsController.indexPathToDateMapping objectForKey:indexPath];
