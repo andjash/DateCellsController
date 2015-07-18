@@ -14,10 +14,6 @@ static NSString * const kDatePickerCellReuseId = @"kDatePickerCellReuseId";
 
 #pragma mark - Init&Dealloc
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-}
-
 + (NSString * const)cellReuseId {
     return kDatePickerCellReuseId;
 }
