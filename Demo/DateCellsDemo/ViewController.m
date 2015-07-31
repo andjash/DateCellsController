@@ -11,9 +11,9 @@
 
 @interface ViewController ()<DateCellsControllerDelegate>
 
-@property (nonatomic, retain) DateCellsController *dateCellsController;
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) DateCellsController *dateCellsController;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 @end
 

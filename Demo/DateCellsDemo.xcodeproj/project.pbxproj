@@ -16,26 +16,11 @@
 		CCAD75BC18BF2BB0003BBC43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAD75BB18BF2BB0003BBC43 /* AppDelegate.m */; };
 		CCAD75C218BF2BB0003BBC43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAD75C118BF2BB0003BBC43 /* ViewController.m */; };
 		CCAD75C418BF2BB0003BBC43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCAD75C318BF2BB0003BBC43 /* Images.xcassets */; };
-		CCAD75CB18BF2BB0003BBC43 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75CA18BF2BB0003BBC43 /* XCTest.framework */; };
-		CCAD75CC18BF2BB0003BBC43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75AB18BF2BB0003BBC43 /* Foundation.framework */; };
-		CCAD75CD18BF2BB0003BBC43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAD75AF18BF2BB0003BBC43 /* UIKit.framework */; };
-		CCAD75D518BF2BB0003BBC43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCAD75D318BF2BB0003BBC43 /* InfoPlist.strings */; };
-		CCAD75D718BF2BB0003BBC43 /* DateCellsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAD75D618BF2BB0003BBC43 /* DateCellsDemoTests.m */; };
 		CCAD75E618BF2C22003BBC43 /* DateCellsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAD75E218BF2C22003BBC43 /* DateCellsController.m */; };
 		CCAD75E718BF2C22003BBC43 /* DatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAD75E418BF2C22003BBC43 /* DatePickerCell.m */; };
 		CCAD75E818BF2C22003BBC43 /* DatePickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCAD75E518BF2C22003BBC43 /* DatePickerCell.xib */; };
 		CCAD75EA18BF2D17003BBC43 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCAD75E918BF2D17003BBC43 /* ViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CCAD75CE18BF2BB0003BBC43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCAD75A018BF2BB0003BBC43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CCAD75A718BF2BB0003BBC43;
-			remoteInfo = DateCellsDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09F71C2C1B58DEE5001B873B /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
@@ -52,11 +37,7 @@
 		CCAD75C018BF2BB0003BBC43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CCAD75C118BF2BB0003BBC43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CCAD75C318BF2BB0003BBC43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CCAD75C918BF2BB0003BBC43 /* DateCellsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateCellsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD75CA18BF2BB0003BBC43 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CCAD75D218BF2BB0003BBC43 /* DateCellsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DateCellsDemoTests-Info.plist"; sourceTree = "<group>"; };
-		CCAD75D418BF2BB0003BBC43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCAD75D618BF2BB0003BBC43 /* DateCellsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateCellsDemoTests.m; sourceTree = "<group>"; };
 		CCAD75E118BF2C22003BBC43 /* DateCellsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateCellsController.h; sourceTree = "<group>"; };
 		CCAD75E218BF2C22003BBC43 /* DateCellsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateCellsController.m; sourceTree = "<group>"; };
 		CCAD75E318BF2C22003BBC43 /* DatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerCell.h; sourceTree = "<group>"; };
@@ -76,16 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCAD75C618BF2BB0003BBC43 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD75CB18BF2BB0003BBC43 /* XCTest.framework in Frameworks */,
-				CCAD75CD18BF2BB0003BBC43 /* UIKit.framework in Frameworks */,
-				CCAD75CC18BF2BB0003BBC43 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,7 +65,6 @@
 			children = (
 				CCAD75E018BF2C22003BBC43 /* DateCellsController */,
 				CCAD75B118BF2BB0003BBC43 /* DateCellsDemo */,
-				CCAD75D018BF2BB0003BBC43 /* DateCellsDemoTests */,
 				CCAD75AA18BF2BB0003BBC43 /* Frameworks */,
 				CCAD75A918BF2BB0003BBC43 /* Products */,
 			);
@@ -104,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				CCAD75A818BF2BB0003BBC43 /* DateCellsDemo.app */,
-				CCAD75C918BF2BB0003BBC43 /* DateCellsDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +115,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CCAD75D018BF2BB0003BBC43 /* DateCellsDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CCAD75D618BF2BB0003BBC43 /* DateCellsDemoTests.m */,
-				CCAD75D118BF2BB0003BBC43 /* Supporting Files */,
-			);
-			path = DateCellsDemoTests;
-			sourceTree = "<group>";
-		};
-		CCAD75D118BF2BB0003BBC43 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCAD75D218BF2BB0003BBC43 /* DateCellsDemoTests-Info.plist */,
-				CCAD75D318BF2BB0003BBC43 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		CCAD75E018BF2C22003BBC43 /* DateCellsController */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,24 +148,6 @@
 			productReference = CCAD75A818BF2BB0003BBC43 /* DateCellsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CCAD75C818BF2BB0003BBC43 /* DateCellsDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCAD75DD18BF2BB0003BBC43 /* Build configuration list for PBXNativeTarget "DateCellsDemoTests" */;
-			buildPhases = (
-				CCAD75C518BF2BB0003BBC43 /* Sources */,
-				CCAD75C618BF2BB0003BBC43 /* Frameworks */,
-				CCAD75C718BF2BB0003BBC43 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CCAD75CF18BF2BB0003BBC43 /* PBXTargetDependency */,
-			);
-			name = DateCellsDemoTests;
-			productName = DateCellsDemoTests;
-			productReference = CCAD75C918BF2BB0003BBC43 /* DateCellsDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,11 +156,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Andrey Yashnev";
-				TargetAttributes = {
-					CCAD75C818BF2BB0003BBC43 = {
-						TestTargetID = CCAD75A718BF2BB0003BBC43;
-					};
-				};
 			};
 			buildConfigurationList = CCAD75A318BF2BB0003BBC43 /* Build configuration list for PBXProject "DateCellsDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -243,7 +171,6 @@
 			projectRoot = "";
 			targets = (
 				CCAD75A718BF2BB0003BBC43 /* DateCellsDemo */,
-				CCAD75C818BF2BB0003BBC43 /* DateCellsDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,14 +185,6 @@
 				CCAD75EA18BF2D17003BBC43 /* ViewController.xib in Resources */,
 				CCAD75E818BF2C22003BBC43 /* DatePickerCell.xib in Resources */,
 				09F71C2D1B58DEE5001B873B /* Launch Screen.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCAD75C718BF2BB0003BBC43 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD75D518BF2BB0003BBC43 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,37 +203,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCAD75C518BF2BB0003BBC43 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCAD75D718BF2BB0003BBC43 /* DateCellsDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCAD75CF18BF2BB0003BBC43 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CCAD75A718BF2BB0003BBC43 /* DateCellsDemo */;
-			targetProxy = CCAD75CE18BF2BB0003BBC43 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CCAD75B418BF2BB0003BBC43 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CCAD75B518BF2BB0003BBC43 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CCAD75D318BF2BB0003BBC43 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCAD75D418BF2BB0003BBC43 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -424,48 +319,6 @@
 			};
 			name = Release;
 		};
-		CCAD75DE18BF2BB0003BBC43 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DateCellsDemo.app/DateCellsDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DateCellsDemo/DateCellsDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DateCellsDemoTests/DateCellsDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CCAD75DF18BF2BB0003BBC43 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DateCellsDemo.app/DateCellsDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DateCellsDemo/DateCellsDemo-Prefix.pch";
-				INFOPLIST_FILE = "DateCellsDemoTests/DateCellsDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,15 +336,6 @@
 			buildConfigurations = (
 				CCAD75DB18BF2BB0003BBC43 /* Debug */,
 				CCAD75DC18BF2BB0003BBC43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCAD75DD18BF2BB0003BBC43 /* Build configuration list for PBXNativeTarget "DateCellsDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCAD75DE18BF2BB0003BBC43 /* Debug */,
-				CCAD75DF18BF2BB0003BBC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
