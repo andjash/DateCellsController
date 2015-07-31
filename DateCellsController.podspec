@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/andjash/DateCellsController.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '5.0'
-  s.requires_arc = false
+  s.requires_arc = true
 
   s.source_files = 'DateCellsController/*.{h,m}'
   s.resources = 'DateCellsController/*.{xib}'
