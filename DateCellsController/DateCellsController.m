@@ -21,6 +21,13 @@ static const CGFloat kDefaultRowHeight = 44;
 
 @implementation DateCellsController
 
+#pragma mark - Dealloc
+
+- (void)dealloc {
+    self.tableView.delegate = self.delegate;
+    self.tableView.dataSource = self.delegate;
+}
+
 #pragma mark - Propetries
 
 - (void)setTableView:(UITableView *)tableView {

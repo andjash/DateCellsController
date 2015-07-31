@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DateCellsController"
-  s.version          = "1.1.2"
+  s.version          = "1.1.3"
   s.summary          = "Simple ios controller for UITableView with date cells."
   s.license          = 'MIT'
   s.homepage         = 'https://github.com/andjash/DateCellsController'

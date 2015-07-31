@@ -33,9 +33,9 @@ willCollapseTableViewContent:(UITableView *)tableView
 
 @interface DateCellsController : NSObject
 
-@property (nonatomic, assign) id<DateCellsControllerDelegate> delegate;
-@property (nonatomic, retain) UITableView *tableView;
-@property (nonatomic, retain) NSMutableDictionary *indexPathToDateMapping;
+@property (nonatomic, weak) id<DateCellsControllerDelegate> delegate;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableDictionary *indexPathToDateMapping;
 
 - (NSIndexPath *)indexPathForDateCellWithCurrentPicker;
 
